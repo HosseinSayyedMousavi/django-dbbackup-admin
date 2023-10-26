@@ -2,11 +2,11 @@ from setuptools import setup
 
 setup(
     name='django-dbbackup-admin',
-    version='1.0.0',
+    version='1.0.1',
     description='Get Backup From Database Through Admin Panel',
     author='Hossein Sayyedmousavi',
     author_email='Hossein.Sayyedmousavi@gmail.com',
-    packages=['dbbackup-admin'],
+    packages=['dbbackup_admin'],
     install_requires=[
                             'django-dbbackup==4.0.2',
                             'django-solo==2.1.0',
