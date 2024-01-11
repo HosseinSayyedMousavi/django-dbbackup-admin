@@ -6,7 +6,7 @@ except(IOError, ImportError):
     long_description = open('README.md').read()
 setup(
     name='django-dbbackup-admin',
-    version='1.0.2',
+    version='1.2.0',
     description='Get Backup From Database Through Admin Panel',
     long_description=long_description,
     long_description_content_type="text/markdown",
