@@ -32,8 +32,8 @@ DBBACKUP_STORAGE_OPTIONS = {
 }
 ```
 Note: If you use s3 storage you should install boto3 package.
+
 ### 5. create and migrate migrations in BASE_DIR: 
-    python manage.py makemigrations dbbackup_admin
     python manage.py migrate dbbackup_admin
 
 when you pass this missions toy will see this in your admin panel:
