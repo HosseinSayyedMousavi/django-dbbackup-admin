@@ -1,4 +1,5 @@
 from setuptools import setup
+
 try:
     import pypandoc
     long_description = pypandoc.convert_file('README.md', 'rst')
@@ -6,13 +7,15 @@ except(IOError, ImportError):
     long_description = open('README.md').read()
 setup(
     name='django-dbbackup-admin',
-    version='1.3.0',
+    version='1.5.0',
     description='Get Backup From Database Through Admin Panel',
     long_description=long_description,
     long_description_content_type="text/markdown",
     author='Hossein Sayyedmousavi',
     author_email='Hossein.Sayyedmousavi@gmail.com',
-    packages=['dbbackup_admin'],
+    packages=[
+        'dbbackup_admin',
+        'dbbackup_admin.migrations'],
     install_requires=[
                             'django-dbbackup==4.0.2',
                             'django-solo==2.1.0',

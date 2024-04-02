@@ -9,7 +9,7 @@ class Backup(SingletonModel):
 
     updated_date = models.DateTimeField(auto_now=True)
     message = models.TextField(default="Press Save Button To Backup Database",null=True)
-    number_of_backups = models.IntegerField(null=True,blank=True)
+    number_of_backups = models.IntegerField(default=0)
     def  save(self, *args,**kwargs):
         try:
             threading.Thread(target=self.get_backup).start()

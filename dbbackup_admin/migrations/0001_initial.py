@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('updated_date', models.DateTimeField(auto_now=True)),
                 ('message', models.TextField(default='Press Save Button To Backup Database', null=True)),
-                ('number_of_backups', models.IntegerField(blank=True, null=True)),
+                ('number_of_backups', models.IntegerField(default=0)),
             ],
             options={
                 'verbose_name': 'Backup Database',
